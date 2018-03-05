@@ -36,7 +36,7 @@ merge_elements_by_prefix <- function(elements_vector, prefix) {
   
   updated_elements_vector <- elements_vector[titles[!str_detect(titles, paste0(prefix, ".*"))]]
   updated_elements_vector[[prefix]] <- merged_bact
-}s
+}
 
 calculate_correlation <- function(phages_titles, phages_vector, bacts_titles, bacts_vector) {
   correl <- expand.grid(phages = phages_titles, bacts = bacts_titles)
